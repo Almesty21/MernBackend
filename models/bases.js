@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const baseSchema = new mongoose.Schema(
 	{
-		name: { type: 'string', required: true },
+		name: { type: String, required: true },
 		varients: [],
 		prices: [],
 		stock: { type: Number, required: true },
