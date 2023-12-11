@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const cheeseSchema = new mongoose.Schema(
 	{
-		name: { type: 'string', required: true },
+		name: { type: String, required: true },
 		stock: { type: Number, required: true },
 	},
 	{
