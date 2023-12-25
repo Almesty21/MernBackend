@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
 				}).save();
 				const url = `${process.env.BASE_URL}users/${user.id}/verify/${token.token}`;
 				//await sendEmail(user.email, 'Verify Email', url);
-				await sendEmail(user.email, 'Verify Email', url, { mode: 'cors' });
+				await sendEmail(user.email, 'Verify Email', url);
 			}
 
 			return res.status(400).send({
